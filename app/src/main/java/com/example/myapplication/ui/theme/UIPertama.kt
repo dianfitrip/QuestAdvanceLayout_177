@@ -2,6 +2,7 @@ package com.example.myapplication.ui.theme
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.layout.ModifierLocalBeyondBoundsLayout
 import androidx.compose.ui.unit.sp
 
 
@@ -57,8 +58,20 @@ fun ActivitasPertama(modifier: Modifier){
                     )
                 }
             }
+            Box(
+                modifier = Modifier
+                    .fillMaxSize()
+            )   {
+                Text(
+                    text = stringResource(id = R.string.copy),
+                    modifier = Modifier
+                        .align(Alignment.BottomCenter)
+                        .padding(bottom =50.dp)
+                )
+            }
 
-                }
+        }
+
 
     }
 }
