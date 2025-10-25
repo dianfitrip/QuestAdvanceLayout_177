@@ -69,6 +69,17 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
     }
 }
 
+@Composable
+fun SocialIcon(@DrawableRes iconResId: Int) {
+    Image(
+        painter = painterResource(id = iconResId),
+        contentDescription = "Social Media Icon",
+        contentScale = ContentScale.Fit,
+        modifier = Modifier
+            .size(40.dp)
+    )
+}
+
 
 
 
