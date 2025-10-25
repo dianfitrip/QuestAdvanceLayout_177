@@ -32,6 +32,13 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
             SocialIcon(iconResId = R.drawable.linkedin)
         }
         Spacer(modifier = Modifier.height(16.dp))
+
+        Text(
+            text = stringResource(id = R.string.name),
+            color = Color.White,
+            fontSize = 24.sp,
+            fontWeight = FontWeight.Bold
+        )
     }
 }
 
