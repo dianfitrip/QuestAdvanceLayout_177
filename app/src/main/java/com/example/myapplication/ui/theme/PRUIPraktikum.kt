@@ -52,6 +52,13 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
             fontSize = 16.sp
         )
         Spacer(modifier = Modifier.height(32.dp))
+
+        Column(verticalArrangement = Arrangement.spacedBy(16.dp)) {
+            MenuItem(iconResId = R.drawable.privacy, text = stringResource(id = R.string.privacy))
+            MenuItem(iconResId = R.drawable.history, text = stringResource(id = R.string.history))
+            MenuItem(iconResId = R.drawable.setting, text = stringResource(id = R.string.settings))
+        }
+
     }
 }
 
