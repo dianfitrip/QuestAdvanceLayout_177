@@ -80,6 +80,38 @@ fun SocialIcon(@DrawableRes iconResId: Int) {
     )
 }
 
+@Composable
+fun MenuItem(@DrawableRes iconResId: Int, text: String) {
+    Card(
+        modifier = Modifier.fillMaxWidth(),
+        shape = RoundedCornerShape(50),
+        colors = CardDefaults.cardColors(containerColor = Color.DarkGray)
+    ) {
+        Row(
+            modifier = Modifier.padding(horizontal = 20.dp, vertical = 16.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Image(
+                painter = painterResource(id = iconResId),
+                contentDescription = text,
+                modifier = Modifier.size(24.dp)
+            )
+            Spacer(modifier = Modifier.width(16.dp))
+            Text(
+                text = text,
+                color = Color.White,
+                fontSize = 16.sp,
+                modifier = Modifier.weight(1f)
+            )
+            Image(
+                painter = painterResource(id = R.drawable.next),
+                contentDescription = stringResource(id = R.string.next),
+                modifier = Modifier.size(24.dp)
+            )
+        }
+    }
+}
+
 
 
 
