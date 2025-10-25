@@ -21,6 +21,16 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
             contentScale = ContentScale.Crop
         )
         Spacer(modifier = Modifier.height(24.dp))
+
+        Row(
+            horizontalArrangement = Arrangement.spacedBy(16.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            SocialIcon(iconResId = R.drawable.facebook)
+            SocialIcon(iconResId = R.drawable.telegram)
+            SocialIcon(iconResId = R.drawable.instagram)
+            SocialIcon(iconResId = R.drawable.linkedin)
+        }
     }
 }
 
