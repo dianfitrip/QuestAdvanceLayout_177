@@ -112,6 +112,12 @@ fun MenuItem(@DrawableRes iconResId: Int, text: String) {
     }
 }
 
+@Preview(showBackground = true)
+@Composable
+fun ProfileScreenPreview() {
+    ProfileScreen()
+}
+
 
 
 
