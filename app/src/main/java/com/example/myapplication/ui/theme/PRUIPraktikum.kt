@@ -58,6 +58,13 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
             MenuItem(iconResId = R.drawable.history, text = stringResource(id = R.string.history))
             MenuItem(iconResId = R.drawable.setting, text = stringResource(id = R.string.settings))
         }
+        Spacer(Modifier.weight(1f))
+
+        Text(
+            text = stringResource(id = R.string.copyr),
+            color = Color.Gray,
+            fontSize = 12.sp
+        )
 
     }
 }
