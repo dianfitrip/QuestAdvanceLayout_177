@@ -22,6 +22,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.myapplication.R
+import androidx.compose.ui.text.style.TextAlign
 
 
 @Composable
@@ -71,7 +72,8 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
         Text(
             text = stringResource(id = R.string.bio),
             color = Color.Gray,
-            fontSize = 16.sp
+            fontSize = 16.sp,
+            textAlign = TextAlign.Center
         )
         Spacer(modifier = Modifier.height(32.dp))
 
