@@ -31,6 +31,7 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
             SocialIcon(iconResId = R.drawable.instagram)
             SocialIcon(iconResId = R.drawable.linkedin)
         }
+        Spacer(modifier = Modifier.height(16.dp))
     }
 }
 
